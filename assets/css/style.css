@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 1140px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
@@ -102,21 +102,26 @@ header{
 }
 
 .primary-button {
-    background-color: transparent;
+    background-color: #F28123;
+    border: none;
     color: white;
-    border: 2px solid #ff9900;
     padding: 10px 20px;
     border-radius: 20px;
-    margin-right: 20px;
     margin-top: 20px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
     font-weight: 600;
     text-transform: capitalize;
     font-size: 16px;
+    display: inline-flex;
+    gap: 10px;
     cursor: pointer;
 }
 
 .primary-button:hover {
-    background-color: #ff9900;
+    background-color: black;
+    color: #F28123;
+    /* border: 2px #F28123 solid; */
 }
 
 .fetuer-section{
@@ -158,13 +163,13 @@ header{
     color: #F28123;
 }
 
-h3 {
+.hr-orange {
   font-size: 40px;
   position: relative;
   padding-bottom: 5px;
 }
 
-h3:after {
+.hr-orange:after {
   position: absolute;
   content: '';
   left: 0px;
@@ -179,4 +184,129 @@ h3:after {
 .plain-text{
     letter-spacing: 0.5px;
     padding-top: 20px;
+}
+
+.card-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.product-card{
+    width: 350px;
+    box-shadow: 0 0 20px #e4e4e4;
+}
+
+.cart-banner-section{
+    background-image: url(../img/hero-bg-3.jpg);
+}
+
+.cart-banner{
+    display: flex;
+    gap: 20px;
+    padding: 100px 0;
+}
+
+.cart-banner-img{
+    width: 50%;
+}
+
+.cart-banner-text{
+    width: 50%;
+}
+
+.cart-banner-heading{
+    font-size: 50px;
+}
+
+.cart-banner-uppercase{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.cart-p{
+    padding-bottom: 30px;
+}
+
+.time-counter {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.time-counter .time-countdown {
+  position: relative;
+}
+
+.time-countdown .counter-column {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  padding: 8px 20px 14px;
+  text-transform: capitalize;
+  text-align: center;
+  border: 2px solid #F28123;
+}
+
+.time-countdown .counter-column .count {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 1.4em;
+  padding: 0px 0px;
+  color: #F28123;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.client-avater {
+  margin-bottom: 20px;
+}
+
+.client-meta h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.client-meta h3 span {
+  display: block;
+  font-size: 70%;
+  margin-top: 10px;
+  color: #051922;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+p.testimonial-body {
+  font-size: 17px;
+  font-style: italic;
+  width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #999999;
+  margin-top: 20px;
+}
+
+.last-icon {
+  margin-top: 20px;
+  font-size: 25px;
+  opacity: 0.3;
+}
+
+.client-avater img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 450px){
+    
 }
